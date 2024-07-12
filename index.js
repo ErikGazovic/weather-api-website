@@ -12,7 +12,7 @@ const apiKey = "";
 app.use(express.static("public"));
 
 app.get("/", async (req,res)  => {
-    res.sendFile(__dirname + "/index.html");
+    res.render("index.ejs");
 });
 
 app.listen(port, ()  => {
